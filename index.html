@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media Cibaduyut</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: #f2f3f5;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #6a89cc, #30336b);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      color: #f9ca24;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?bandung,city') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #30336b;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #2f3640;
+    }
+    .card p {
+      color: #555;
+    }
+
+    .about {
+      background: #fff;
+      border-left: 5px solid #30336b;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+
+    .cta {
+      background: #30336b;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cta a {
+      display: inline-block;
+      background: #f9ca24;
+      color: #222;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Media Cibaduyut</h1>
+    <p>Berita lokal, gaya hidup, dan cerita inspiratif dari jantung industri sepatu Indonesia</p>
+  </header>
+
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Berita</a>
+    <a href="#">UMKM</a>
+    <a href="#">Gaya Hidup</a>
+    <a href="#">Cibaduyut Hari Ini</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+  <div class="hero">
+    <div>Menjangkau Komunitas Lewat Informasi yang Jujur dan Relevan</div>
+  </div>
+
+  <section class="section">
+    <h2>Berita Terbaru</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Pameran Sepatu Lokal Gaet Investor Muda</h3>
+        <p>Pengrajin sepatu Cibaduyut kini makin dilirik kalangan muda. Ajang pameran terbaru mempertemukan UMKM dan pemodal kreatif.</p>
+      </div>
+      <div class="card">
+        <h3>Kuliner Kaki Lima Naik Kelas</h3>
+        <p>Kuliner khas Cibaduyut mulai dilirik sebagai produk unggulan. Kini hadir dengan kemasan modern dan siap ekspansi digital.</p>
+      </div>
+      <div class="card">
+        <h3>Infrastruktur Baru Menuju Sentra Sepatu</h3>
+        <p>Pemerintah daerah siapkan proyek jalan penghubung baru untuk mempermudah akses wisatawan dan distribusi produk lokal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about">
+    <h2>Tentang Media Cibaduyut</h2>
+    <p><strong>Media Cibaduyut</strong> adalah platform berita digital yang berfokus pada informasi lokal dari kawasan Cibaduyut, Bandung. Kami menyajikan kabar aktual, kisah inspiratif, liputan bisnis lokal, dan perkembangan UMKM yang membanggakan daerah. Dengan semangat transparansi dan jurnalisme positif, kami ingin menjadi bagian dari perubahan menuju masyarakat yang lebih melek informasi dan berdaya.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Bergabung Bersama Kami</h2>
+    <p>Ingin berkontribusi dengan tulisan, berita, atau informasi komunitas? Hubungi tim redaksi Media Cibaduyut.</p>
+    <a href="#">Hubungi Redaksi</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Media Cibaduyut. Dibuat dengan semangat lokalitas dan cinta akan kebenaran.
+  </footer>
+
+</body>
+</html>
